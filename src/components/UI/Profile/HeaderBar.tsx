@@ -1,4 +1,6 @@
 import React from "react";
+import logo from "../../../assests/images/tweeter.svg";
+import Image from "next/image";
 
 const HeaderBar = () => {
   const headerLinks = [
@@ -18,7 +20,9 @@ const HeaderBar = () => {
 
   return (
     <div className="bg-blue flex h-20 items-center justify-between px-10">
-      <div className="flex h-full items-center">Logo</div>
+      <div className="flex h-full items-center">
+        <Image alt="logo" src={logo} />
+      </div>
       <div className="flex h-full items-center gap-10">
         {headerLinks.map((i, index) => (
           <div

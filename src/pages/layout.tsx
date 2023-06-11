@@ -9,7 +9,7 @@ export default function Layout({
   return (
     <>
       <HeaderBar />
-      <main>{children}</main>
+      <div>{children}</div>
     </>
   );
 }
