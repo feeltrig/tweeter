@@ -21,7 +21,7 @@ const OptionBox = () => {
   ];
 
   return (
-    <div className="flex w-1/4 flex-col gap-2 rounded-xl bg-white py-5 shadow-lg">
+    <div className="flex h-56 w-1/4 flex-col gap-2 rounded-xl bg-white py-5 shadow-lg">
       {options.map((i, ind) => (
         <div className="relative px-5 py-2" key={ind}>
           {i.title}

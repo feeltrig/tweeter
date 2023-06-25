@@ -7,7 +7,7 @@ import bg from "../assests/images/bg.jpg";
 
 const Home = () => {
   return (
-    <div className="relative h-screen bg-gray-100">
+    <div className="relative  bg-gray-100">
       <Image
         src={bg}
         alt="bg"
