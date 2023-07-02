@@ -3,7 +3,7 @@ import { ProfileIcon } from "../Profile/ProfileIcon";
 
 const TweetReplyBox = () => {
   return (
-    <div className="flex w-full items-center gap-5">
+    <div className="relative flex h-full w-full items-center gap-5 align-middle">
       {/* icon */}
       <ProfileIcon
         settings={{

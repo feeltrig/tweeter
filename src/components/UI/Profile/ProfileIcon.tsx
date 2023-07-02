@@ -25,12 +25,24 @@ export const ProfileIcon = ({ settings, src }: PF) => {
   );
 };
 
-const defaultProps = {
+// const defaultProps = {
+//   width: 250,
+//   objectFit: "cover",
+//   height: 150,
+//   border: "5px inset solid white",
+//   borderRadius: "10px",
+// };
+
+const settings = {
   width: 250,
   objectFit: "cover",
   height: 150,
   border: "5px inset solid white",
   borderRadius: "10px",
 };
+
+const defaultProps = {
+settings
+}
 
 ProfileIcon.defaultProps = defaultProps;

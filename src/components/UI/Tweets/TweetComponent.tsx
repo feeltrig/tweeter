@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { ProfileIcon } from "../Profile/ProfileIcon";
+import TweetComments from "./TweetComments";
 import TweetOptions from "./TweetOptions";
 import TweetReplyBox from "./TweetReplyBox";
 
@@ -55,6 +56,9 @@ const TweetComponent = () => {
 
       {/* reply option */}
       <TweetReplyBox />
+
+      {/* comments */}
+      <TweetComments />
     </div>
   );
 };

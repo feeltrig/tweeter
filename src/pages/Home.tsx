@@ -19,9 +19,17 @@ const Home = () => {
         }}
       />
       <ProfileInfo />
-      <div className="restOfContent mx-auto my-10 flex w-2/3 justify-between gap-10">
-        <OptionBox />
-        <TweetComponent />
+      <div className="restOfContent mx-auto my-10 flex w-2/3 justify-between gap-5">
+        <div className="w-1/4 flex-grow">
+          <OptionBox />
+        </div>
+        <div className="flex w-3/4 flex-col gap-5">
+          <TweetComponent />
+          <TweetComponent />
+          <TweetComponent />
+          <TweetComponent />
+          <TweetComponent />
+        </div>
       </div>
     </div>
   );
