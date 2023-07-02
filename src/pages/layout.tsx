@@ -8,7 +8,22 @@ export default function Layout({
 }): React.JSX.Element {
   return (
     <>
-      <HeaderBar />
+      <HeaderBar
+        headerLinks={[
+          {
+            title: "Home",
+            active: true,
+          },
+          {
+            title: "Explore",
+            active: false,
+          },
+          {
+            title: "Bookmarks",
+            active: false,
+          },
+        ]}
+      />
       <div>{children}</div>
     </>
   );

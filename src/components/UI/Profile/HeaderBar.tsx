@@ -1,22 +1,17 @@
 import React from "react";
 import logo from "../../../assests/images/tweeter.svg";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
-const HeaderBar = () => {
-  const headerLinks = [
-    {
-      title: "Home",
-      active: true,
-    },
-    {
-      title: "Explore",
-      active: false,
-    },
-    {
-      title: "Bookmarks",
-      active: false,
-    },
-  ];
+export interface headerLinksINF {
+  title: String;
+  active: Boolean;
+}
+
+const HeaderBar = ({ headerLinks }: { headerLinks: headerLinksINF[] }) => {
+  const { pathname } = useRouter();
+  console.log(pathname);
 
   return (
     <div className="bg-blue flex h-20 items-center justify-between px-10">
@@ -32,8 +27,9 @@ const HeaderBar = () => {
             key={index}
             className="relative flex h-full w-20 items-center justify-center"
           >
-            {i.title}
-            {i.active && (
+            <Link href={String(i.title)}>{i.title}</Link>
+
+            {pathname === `/${i.title}` && (
               <div className="absolute bottom-0 h-2 w-full rounded-t-md bg-blue-500"></div>
             )}
           </div>
